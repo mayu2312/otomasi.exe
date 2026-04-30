@@ -4,6 +4,8 @@ import subprocess
 import time
 from datetime import datetime
 
+pyautogui.FAILSAFE = False # disable failsafe to prevent the program from crashing if the mouse is moved to the corner of the screen
+
 subprocess.Popen('notepad.exe') # open notepad
 time.sleep(2) # wait for notepad to open
 pyautogui.write('Your Mom is Gay', interval=0.05) # type the text with a delay between each character
